@@ -1,51 +1,31 @@
-/* public/style.css */
-
-/* Button stijl */
-#forum-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    background-image: url('../img/Buttons/toolbar-buttons/admin_2-removebg-preview.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
+/* Tekst stijl */
+#forum-popup h1 {
+    margin-top: 70px; /* Extra marge om tekst lager te plaatsen */
+    color: #000000;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
 }
 
-/* Pop-up stijl */
-#forum-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 60%;
-    background-image: url('../img/Background/Background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1001;
-    border-radius: 10px;
-    padding: 20px;
+#forum-popup p {
+    margin-top: 20px; /* Houd consistentie met de nieuwe structuur */
+    color: #fff;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
 }
 
 /* Sluitknop */
 #close-popup {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 10px; /* Zorgt ervoor dat de knop bovenaan staat */
+    right: 10px; /* Plaatst de knop rechts */
     width: 30px;
     height: 30px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+    background-color: red; /* Herstel rode achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    border: none; /* Geen rand om de knop */
+    border-radius: 50%; /* Maak de knop cirkelvormig */
+    cursor: pointer; /* Zorgt voor een klikbare cursor */
     font-weight: bold;
     text-align: center;
-    line-height: 30px;
+    line-height: 30px; /* Zorg dat de 'X' gecentreerd wordt */
 }
