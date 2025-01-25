@@ -1,0 +1,68 @@
+/* Algemene reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Scherm voorkomt scrollen */
+}
+
+/* Popup-container met achtergrond */
+#popup-container {
+    width: 100vw;
+    height: 100vh;
+    background: url('https://github.com/boodtrap/grepolis-forum-editor/blob/main/img/Background/Background.jpg?raw=true') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bruine transparante werkbalk */
+.toolbar {
+    background: rgba(139, 69, 19, 0.8); /* Bruin met transparantie */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8B4513; /* Donkerdere rand */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Knoppen in de werkbalk */
+.nav-btn {
+    background: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #A0522D; /* Lichtere kleur */
+}
+
+#close-popup {
+    background: #FF4500; /* Felrode sluitknop */
+    font-weight: bold;
+}
+
+#close-popup:hover {
+    background: #FF6347; /* Lichtere roodtint */
+}
+
+/* Inhoudscontainer */
+.content-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.9); /* Witte transparante achtergrond */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
